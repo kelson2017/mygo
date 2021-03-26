@@ -1,0 +1,2 @@
+# mygo
+Study Go Language
