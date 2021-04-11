@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>{{.Title}}</title>
+  </head>
+  <body>
+    {{.Title}} {{.Count}} count<br>
+    <br>
+    {{range $i, $a := .Contents}}
+        {{$a.Name}} : {{$a.Sentence}}<br>
+    {{end}}
+
+    <p>
+        {{if .Lines}}
+        {{range $i, $line := .Lines}}
+            {{$line}}<br>
+        {{end}}
+        {{end}}
+    </p>
+
+  </body>
+</html>
